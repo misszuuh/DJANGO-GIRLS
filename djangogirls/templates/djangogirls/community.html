@@ -1,0 +1,379 @@
+{% load static  %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %} </title>
+        <link href="{% static 'djangogirls/css/style.css' %}" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <style>
+            *{
+              font-family: "Mulish", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+
+         <header>
+             
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      
+
+
+
+
+             <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid d-flex justify-content-between align-items-center">
+                  <!-- Left: Logo -->
+                  <a class="navbar-brand" href="#">
+                      <img src="{% static 'djangogirls/imagesgirls/image 1.jpg' %}" alt="sidebar" style="width: 100px; height: auto;">
+                  </a>
+          
+                  <!-- Center: Nav items -->
+                  <ul class="nav justify-content-center mx-auto">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#" style="color: #F79420; font-family: Mulish;">Community</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" style="color: #F79420; font-family: Mulish;">Workshops</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" style="color: #F79420; font-family: Mulish;">Resources</a>
+                      </li>
+                  </ul>
+          
+                  <!-- Right: Join the community -->
+                  <a class="nav-link disabled" aria-disabled="true" style="background-color: #F79420; color: white; padding: 10px;" href="#">Join the community</a>
+              </div>
+          </nav>
+        </header>
+           
+                
+
+
+              <div class="container">
+                <div class="relative card text-bg-dark">
+                  <div style="width:100%; height:100%; position:absolute; top:0; left:0; background-color: #000000AF"></div>
+                  <img src="{% static 'djangogirls/imagesgirls/Rectangle 45.jpg' %}" class="card-img" alt="peoples">
+                  <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="card-title community-title" style="font-weight: 900;font-style:bold; font-size: 96px; color: #F79420">COMMUNITY</h1>
+                    <p class="card-text community-paragraph"style="font-weight 700; font-size: 24px;  ">Join the Django Girls Tanzania community and Make a Difference.</p>
+                  </div>
+                </div>
+              </div>
+
+
+              
+
+                
+                
+                <div class="container card-group" style="margin-top: -15vh; gap: 1rem; justify-content: center;">
+                  <div class="card text-center" style="border-radius: 2rem 2rem 0 0; width: 28vw; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <div style="height: 5%; width: 100%; border-radius: 2rem 2rem 0 0; background-color: #F79420;"></div>
+                    <img src="{% static 'djangogirls/imagesgirls/Diversity.jpg' %}" class="card-img-top mx-auto d-block rounded-circle" alt="diversity" style="width: 50px; height: 50px; margin-top: 1rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-weight: 900; font-size: 28px; font-family: Mulish;">Diverse Perspectives</h5>
+                      <p class="card-text">Our community brings together <br>individuals from various backgrounds,<br>
+                        professions, and interests. By joining us,<br>you'll have the opportunity to engage<br> 
+                        with a diverse range of perspectives,<br>ideas, and experiences, enriching your<br>
+                        own understanding of the world.</p>
+                    </div>
+                  </div>
+                
+                  <div class="card text-center" style="border-radius: 2rem 2rem 0 0; width: 28vw; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <div style="height: 5%; width: 100%; border-radius: 2rem 2rem 0 0; background-color: #F79420;"></div>
+                    <img src="{% static 'djangogirls/imagesgirls/Learning.jpg' %}" class="card-img-top mx-auto d-block rounded-circle" alt="learning" style="width: 50px; height: 50px; margin-top: 1rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-weight: 900; font-size: 28px; font-family: Mulish;">Networking Opportunities</h5>
+                      <p class="card-text">Joining our community opens doors to<br> valuable networking opportunities.<br>
+                        Whether you're looking to connect with<br>professionals in your field, seeking<br>
+                        mentorship, or simply want to expand your social circle, our community provides<br>
+                        a platform for meaningful connections<br>and collaborations.</p>
+                    </div>
+                  </div>
+                
+                  <div class="card text-center" style="border-radius: 2rem 2rem 0 0; width: 28vw; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <div style="height: 5%; width: 100%; border-radius: 2rem 2rem 0 0; background-color: #F79420;"></div>
+                    <img src="{% static 'djangogirls/imagesgirls/Omnichannel.jpg' %}" class="card-img-top mx-auto d-block rounded-circle" alt="omnichannel" style="width: 50px; height: 50px; margin-top: 1rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-weight: 900; font-size: 28px; font-family: Mulish;">Learning and Growth</h5>
+                      <p class="card-text">Our community is a hub for continuous<br>learning and personal growth. Through<br>
+                        workshops, seminars, discussions, and<br> other educational initiatives, you'll<br>
+                        have access to resources and support to<br> enhance your skills, broaden your<br>
+                        knowledge, and achieve your personal<br> and professional goals.</p>
+                    </div>
+                  </div>
+                </div><br><br>
+                 
+                
+
+
+
+ <div class="card-body text-center">
+    <h1 class="card-title" style="border: 0; font-family: Mulish; font- weight: 900; font-size: 48px;">Local Capters</h1>
+    <p class="card-text" style="fon-family: Mulish; font-weight: 500 font-size: 24px;">Check out our upcoming workshops below.</p>
+  </div><br><br>
+
+
+
+
+
+<div class = "container"> 
+  <div class="card-group" style="gap: 2rem; max-width: 2000px; margin: 0 auto;">
+    <!-- Mbeya Django Chapter -->
+    <div style="display: inline-block; width: 30%;">
+        <div class="card" style="border: 1px solid #ddd; background-color: #D9D9D9; border-radius: 0.5rem; width: 100%;">
+          <img src="{% static 'djangogirls/imagesgirls/JTM_7464 2.jpg' %}" class="card-img-top" alt="..." style="border-radius: 0.5rem 0.5rem 0 0;">
+        </div>
+        <div class="text-left" style="margin-top: 10px;">
+          <span style="font-weight: 400; font-size: 24px; font-family: Mulish;">Mbeya Django Chapter</span>
+          <img src="{% static 'djangogirls/imagesgirls/Right Arrow.jpg' %}" alt="arrow" style="width: 20px; margin-left: 5px;">
+        </div>
+    </div>
+
+    <!-- Dar es Salaam Django Chapter -->
+    <div style="display: inline-block; width: 30%;">
+        <div class="card" style="border: 1px solid #ddd; background-color: #D9D9D9; border-radius: 0.5rem; width: 100%;">
+          <img src=".." class="card-img-top" alt="..." style="border-radius: 0.5rem 0.5rem 0 0;">
+        </div>
+        <div class="text-left" style="margin-top: 10px;">
+          <span style="font-weight: 400; font-size: 24px; font-family: Mulish;">Dar es Salaam Django Chapter</span>
+          <img src="{% static 'djangogirls/imagesgirls/Right Arrow.jpg' %}" alt="arrow" style="width: 20px; margin-left: 5px;">
+        </div>
+    </div>
+
+    <!-- Arusha Django Chapter -->
+    <div style="display: inline-block; width: 30%;">
+        <div class="card" style="border: 1px solid #ddd; background-color: #D9D9D9; border-radius: 0.5rem; width: 100%;">
+          <img src="..." class="card-img-top" alt="..." style="border-radius: 0.5rem 0.5rem 0 0;">
+        </div>
+        <div class="text-left" style="margin-top: 10px;">
+          <span style="font-weight: 400; font-size: 24px; font-family: Mulish;">Arusha Django Chapter</span>
+          <img src="{% static 'djangogirls/imagesgirls/Right Arrow.jpg' %}" alt="arrow" style="width: 20px; margin-left: 5px;">
+        </div>
+    </div>
+
+
+
+
+
+</div><br><br>
+
+  
+
+<div class="card-group" style="gap: 2rem; max-width: 2000px; margin: 0 auto;">
+  <!-- Mbeya Django Chapter -->
+  <div style="display: inline-block; width: 30%;">
+      <div class="card" style="border: 1px solid #ddd; background-color: #D9D9D9; border-radius: 0.5rem; width: 100%;">
+        <img src="{% static 'djangogirls/imagesgirls/JTM_7464 2.jpg' %}" class="card-img-top" alt="..." style="border-radius: 0.5rem 0.5rem 0 0;">
+      </div>
+      <div class="text-left" style="margin-top: 10px;">
+        <span style="font-weight: 400; font-size: 24px; font-family: Mulish;">Zanzibar Django Chapter</span>
+        <img src="{% static 'djangogirls/imagesgirls/Right Arrow.jpg' %}" alt="arrow" style="width: 20px; margin-left: 5px;">
+      </div>
+  </div>
+
+  <!-- Dar es Salaam Django Chapter -->
+  <div style="display: inline-block; width: 30%;">
+      <div class="card" style="border: 1px solid #ddd; background-color: #D9D9D9; border-radius: 0.5rem; width: 100%;">
+        <img src=".." class="card-img-top" alt="..." style="border-radius: 0.5rem 0.5rem 0 0;">
+      </div>
+      <div class="text-left" style="margin-top: 10px;">
+        <span style="font-weight: 400; font-size: 24px; font-family: Mulish;">Arusha Django Chapter</span>
+        <img src="{% static 'djangogirls/imagesgirls/Right Arrow.jpg' %}" alt="arrow" style="width: 20px; margin-left: 5px;">
+      </div>
+  </div>
+
+  <!-- Arusha Django Chapter -->
+  <div style="display: inline-block; width: 30%;">
+      <div class="card" style="border: 1px solid #ddd; background-color: #D9D9D9; border-radius: 0.5rem; width: 100%;">
+        <img src="..." class="card-img-top" alt="..." style="border-radius: 0.5rem 0.5rem 0 0;">
+      </div>
+      <div class="text-left" style="margin-top: 10px;">
+        <span style="font-weight: 400; font-size: 24px; font-family: Mulish;">Arusha Django Chapter</span>
+        <img src="{% static 'djangogirls/imagesgirls/Right Arrow.jpg' %}" alt="arrow" style="width: 20px; margin-left: 5px;">
+      </div>
+  </div>
+</div><br><br>
+</div>
+
+
+
+
+
+<div class="container">
+<div style="display: flex; align-items: flex-start; gap: 2rem;">
+  <!-- Text Card -->
+  <div class="card border" style="max-width: 710px; background-color: #D9D9D9; height: 1235px; display: flex; align-items: center; padding: 80px;">
+    <div class="card-body text-success" style="max-width: 100%;">
+      <h5 class="card-title" style="font-family: Mulish; font-weight: 700; font-size: 48px; color: black;">
+        Discover Django Girls:<br>A Visual journey
+      </h5><br>
+      <p class="card-text" style="font-family: Mulish; font-size: 24px; font-weight: 400; color: black;">
+        Our Community brings together individuals<br> from various backgrounds, professions, and<br>
+        interests. By joining us, you'll have the <br> opportunity to engage with a diverse range of<br>
+        perspectives, ideas, and experiences.<br> Enriching your own understanding of the<br> world.
+      </p>
+    </div>
+  </div>
+
+  <!-- Image Cards Container -->
+  <div style="display: flex; flex-direction: row; gap: 1rem; margin-left: -20vh; padding: 80px;">
+    <!-- Card with image on top -->
+    <div class="card" style="border: 1px solid #ddd; background-color: #D9D9D9; max-width: 300px;">
+      <img src="{% static 'djangogirls/imagesgirls/Rectangle 116.jpg' %}" class="card-img-left" alt="..." style="width: 527px; height: 856px;">
+    </div>
+
+    <!-- Card with image on bottom -->
+    <div class="card" style="border: 1px solid #ddd; background-color: #D9D9D9; max-width: 300px;">
+      <img src="{% static 'djangogirls/imagesgirls/Rectangle 117.jpg' %}" class="card-img-right" alt="..." style="width: 500px; height: 856px;">
+    </div>
+  </div>
+ </div>
+</div>
+
+
+
+
+<div class="container">
+  <div class="card-body text-center" style="background: linear-gradient(180deg, #FFFFFF 0%, #F8A13B 87.72%, #F79420 100%); border-radius: 15px; padding: 20px;">
+    <h1 class="card-title" style="border: 0;">Join Us in Empowering Tanzanian<br>
+       Women through Technology!</h1><br><br>
+    <p class="card-text">We are always looking for passionate individuals to join our community. Whether you<br>
+       are experienced in coding or have a desire to support women in technology, your<br>
+       contribution is valuable.</p>
+    
+    <!-- Join the cause Section Below the Paragraph -->
+    <div class="text-center mt-4">
+      <a href="#" class="btn" style="background-color: white; color: black; font-family: Mulish; font-size: 24px; font-weight: 700;">Join the Cause</a>
+    </div>   
+  </div>
+  
+</div>
+
+
+
+
+
+<br>
+<br><br>
+
+<div class="container">
+<!--<div class="card border-success mb-3" style="max-width: 2000px;">-->
+  <div class="card-body text-success">
+    <div class="row">
+      <!-- Section One: Image and Paragraph -->
+      <div class="col-md-3 text-center">
+        <div class="section-one">
+          <img src="{% static 'djangogirls/imagesgirls/image 1.jpg' %}" class="img-fluid" alt="Image Section One" style="max-width: 150px;">
+          <p class="mt-3" style="color: black;">Django Girls Tanzania is a non-profit<br>organization and community that empowers women by organizing free,<br>
+          one-day programming workshops. We <br>provide tools, resources, and support to<br>help women enter the world of<br>
+          technology with confidence.</p>
+        </div>
+      </div>
+  
+      <!-- Section Two: Community Heading and List -->
+      <div class="col-md-3">
+        <div class="section-two">
+          <h5 class="card-title" style="#F79420; color: #F79420;">COMMUNITY</h5>
+          <ul class="list-unstyled" style="color: black;">
+            <li style="list-style-type: disc; color: black;">EVENTS</li><br>
+            <li style="list-style-type: disc; color: black;">LOCAL CHAPTERS</li><br>
+            <li style="list-style-type: disc; color: black;">CODE OF CONDUCT</li><br>
+            <li style="list-style-type: disc; color: black;">COMMUNITY GUIDELINE</li><br>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Section Three: Resources Heading and List -->
+      <div class="col-md-3">
+        <div class="section-three">
+          <h5 class="card-title" style="color: #F79420;">RESOURCES</h5>
+          <ul class="list-unstyled" style="color: black;">
+            <li style="list-style-type: disc; color: black;">TUTORIAL</li><br>
+            <li style="list-style-type: disc; color: black;">ORGANIZER'S MANUAL</li><br>
+            <li style="list-style-type: disc; color: black;">COACHING GUIDE</li><br>
+            <li style="list-style-type: disc; color: black;">TUTORIAL EXTENSIONS</li><br>
+            <li style="list-style-type: disc; color: black;">GRAPHICS</li><br>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Section Four: Email Subscription Box -->
+      <div class="col-md-3 text-center">
+        <div class="section-four">
+          <h1 class="card-title" style=" color: #F79420;">NEWSLETTER</h1><br>
+          <p class="card-text" style="color: black;">Sign Up For Our Newsletter To Get The<br>Latest News In Your Inbox.</p>
+  
+        
+          <div class="email-box" style="display: flex; align-items: center; width: 100%; max-width: 700px; border-radius: 5px;">
+            <!-- Section for email input -->
+            <div style="flex: 1; border: 3px solid black; padding: 10px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                <input type="email" placeholder=" Enter Your email" class="form-control" style="border: none; width: 100%; padding: 10px;">
+            </div>
+        
+            <!-- Section for arrow button -->
+            <button type="button" class="btn btn-success" style="border: none; background-color: #F79420; padding: 20px; border-top-right-radius: none; border-bottom-right-radius: none;">
+                <img src="{% static 'djangogirls/imagesgirls/Right Arrow.jpg' %}" style="width: 24px;">
+            </button>
+        </div>
+        
+          
+          <p class="small text-muted mt-2" style="color: black;">Your Email is Safe With Us. We Don't Spam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+  <div class="card border-success mb-3" style="max-width: 2000px; border: 0;">
+    <!-- Card Body Sections... -->
+  
+    <!-- Card Footer -->
+    <div class="card-footer bg-transparent border-success border: 0;">
+      <div class="row">
+        <!-- Section One: Django -->
+        <div class="col-md-4 text-left">
+          <p>Made by the Django girls community</p>
+        </div>
+  
+        <!-- Section Two: All Rights Reserved -->
+        <div class="col-md-4 text-center">
+          <p>All rights reserved || @2024 Djangogirls Community</p>
+        </div>
+  
+        <!-- Section Three: Social Media Icons -->
+        <div class="col-md-4 text-right">
+          <a href="#"><img src="{% static 'djangogirls/imagesgirls/LinkedIn.jpg' %}" alt="Instagram" class="img-fluid" style="width: 24px; margin-right: 10px;"></a>
+          <a href="#"><img src="{% static 'djangogirls/imagesgirls/Instagram.jpg' %}" alt="Instagram" class="img-fluid" style="width: 24px; margin-right: 10px;"></a>
+          <a href="#"><img src="{% static 'djangogirls/imagesgirls/TwitterX.jpg' %}" alt="TwitterX" class="img-fluid" style="width: 24px; margin-right: 10px;"></a>
+          <a href="#"><img src="{% static 'djangogirls/imagesgirls/Facebook.jpg' %}" alt="Facebook" class="img-fluid" style="width: 24px;"></a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>   
+
+
+
+
+
+
+
+
+
+            </body>
+            </html>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        
